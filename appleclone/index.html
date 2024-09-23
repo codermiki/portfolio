@@ -1,272 +1,314 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Apple Responsive Replica</title>
-
-    <!-- Some meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="title" content="Apple Responsive Replica" />
-    <meta
-      name="description"
-      content="A responsive replica of Apple's website"
-    />
-    <link rel='icon' href='images/icons/favicon.ico' type='image/x-icon'/ >
+    <meta name="description" content="" />
 
+    <title>Apple Website</title>
     <!-- Link to the Font-Awesome Font -->
+    <!-- This font gives us the option to use emojis, symbols, common logos and icons as a font -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"
     />
 
-    <!-- Link to Montserrat font from Google Fonts-->
+    <!-- Link to Montserrat font on Google Fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,600,600i,700,700i,800,800i,900,900i&display=swap"
       rel="stylesheet"
     />
 
     <!-- Styles -->
+
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
-  <body>
+
+  <body id="page-top">
     <!-- Header navigation -->
-    <header class="nav-wrapper fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top header-wrapper">
       <div class="container">
-        <nav class="navbar navbar-toggleable-sm navbar-expand-md">
-          <button
-            class="navbar-toggler navbar-toggler-right"
-            type="button"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-          >
-            ☰
-          </button>
-          <a class="navbar-brand mx-auto" href="#"
-            ><img src="images/icons/logo-sm.png"
-          /></a>
+        <a class="logo-link navbar-brand js-scroll-trigger" href="#"
+          ><img src="images/icons/logo.png"
+        /></a>
 
-          <div class="navbar-collapse collapse">
-            <ul class="navbar-nav nav-justified w-100 nav-fill">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/mac/">Mac</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">iphone</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">ipad</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">watch</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">tv</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Music</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#">Support</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/search/"
-                  ><img src="images/icons/search-icon-sm.png"
-                /></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="/cart/"
-                  ><img src="images/icons/cart-sm.png"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/mac/">Mac</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">iphone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">ipad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">watch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">tv</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#">Support</a>
+            </li>
+            <li>
+              <a class="search-link nav-link js-scroll-trigger" href="#"
+                ><img src="images/icons/search-icon.png"
+              /></a>
+            </li>
+            <li>
+              <a class="cart-link nav-link js-scroll-trigger" href="/cart/"
+                ><img src="images/icons/cart.png"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
 
-    <!-- Main section -->
-    <main class="main-section container-fluid px-0 text-center top-100">
-      <!-- -------------First Section Start----------- -->
-      <section class="first-section">
-        <div class="inner-wrapper">
-          <div class="model">16-inch model</div>
-          <div class="product-name">MacBook Pro</div>
-          <div class="brief-description">The best for the brightest.</div>
-          <div class="links-wrapper">
-            <ul>
-              <li><a href="#">Learn more</a></li>
-              <li><a href="#">Buy</a></li>
-            </ul>
-          </div>
-          <div class="image-wrapper">
-            <img
-              class="img-fluid w-100"
-              src="images/home/mac-laptop.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
+    <section class="searchbox">
+      <form>
+        <input type="text" name="searchbox" />
+        <button id="submitButton" class="btn btn-primary" type="submit">
+          Search
+        </button>
+      </form>
+    </section>
 
-      <!-- ------------First Section end------------ -->
+    <!-- Main highlight section -->
 
-      <!-- ---------Second Section Start------------ -->
-      <section class="second-section">
-        <div class="inner-wrapper">
-          <div class="product-name">iPhone 11 Pro</div>
-          <div class="discription-wrapper">
-            Pro cameras. Pro display. Pro performance.
-          </div>
-          <div class="price-wrapper py-1">
-            From $24.95/mo. or $599 with trade-in.
-          </div>
-          <div class="links-wrapper">
-            <ul>
-              <li><a href="#">Learn more</a></li>
-              <li><a href="#">Buy</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- ---------Second Section end-------------- -->
+    <section class="main-highlight-wrapper">
+      <div class="container">
+        <div
+          class="row h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-12">
+            <div class="model">16-inch model</div>
 
-      <!-- ---------Third Section Start------------- -->
+            <div class="product-title">MacBook Pro</div>
 
-      <section class="third-section">
-        <div class="inner-wrapper">
-          <div class="product-name">iPhone 11</div>
-          <div class="discription-wrapper">
-            Just the right amount of the everything.
-          </div>
-          <div class="price-wrapper">
-            From $16.62/mo. or $399 with trade-in.
-          </div>
-          <div class="links-wrapper">
-            <ul>
-              <li><a href="#">Learn more</a></li>
-              <li><a href="#">Buy</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- ---------Third Section end------------ -->
+            <div class="brief-description">The best for the brightest.</div>
 
-      <!-- ---------Fourth Section Start------------ -->
+            <div class="links-wrapper">
+              <ul>
+                <li><a href="">Learn more</a></li>
+                <li><a href="">Buy</a></li>
+              </ul>
+            </div>
 
-      <section class="fourth-section row mx-0">
-        <div class="left-side-wrapper col-12 col-md my-2 mx-md-1">
-          <div class="top-logo-wrapper mb-2">
-            <div class="logo-wrapper">
-              <img src="images/icons/watch-series5-logo.png" alt="" />
+            <div class="main-image-wrapper">
+              <img src="images/home/mac-laptop.jpg" />
             </div>
           </div>
-          <div class="discription-wrapper  mx-auto">
-            With the new Always-On Retina display. You’ve never seen a watch
-            like this.
-          </div>
-          <div class="links-wrapper">
-            <ul>
-              <li><a href="#">Learn more</a></li>
-              <li><a href="#">Buy</a></li>
-            </ul>
-          </div>
         </div>
-        <div class="right-side-wrapper col-md my-2 mx-md-1 col-12">
-          <div class="top-logo-wrapper mb-2">
-            <div class="logo-wrapper">
-              <img src="images/icons/watch-series5-logo.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Second highlight section -->
+    <section class="second-hightlight-wrapper">
+      <div class="container">
+        <div
+          class="row h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-12">
+            <div class="title-wraper">iPhone 11 Pro</div>
+
+            <div class="description-wrapper">
+              Pro cameras. Pro display. Pro performance.
+            </div>
+
+            <div class="price-wrapper">
+              From $24.95/mo. or $599 with trade‑in.
+            </div>
+
+            <div class="links-wrapper">
+              <ul>
+                <li><a href="">Learn more</a></li>
+                <li><a href="">Buy</a></li>
+              </ul>
             </div>
           </div>
-          <div class="discription-wrapper  mx-auto">
-            Get 3% Daily Cash on purchases from Apple using Apple Card.
-          </div>
-          <div class="links-wrapper">
-            <ul>
-              <li><a href="#">Learn more</a></li>
-              <li><a href="#">Buy</a></li>
-            </ul>
-          </div>
         </div>
-      </section>
-      <!-- ---------Fourth Section end------------ -->
+      </div>
+    </section>
 
-      <!-- ---------Fifth Section Start------------ -->
-
-      <section class="fifth-section row mx-0">
-        <div class="left-side-wrapper col-12  col-md my-2 mx-md-2">
-          <div class="top-logo-section">
-            <div class="logo-wrapper">
-              <img src="images/icons/apple-tv-logo.png" alt="" />
+    <!-- Third highlight section -->
+    <section class="third-highlight-wrapper">
+      <div class="container">
+        <div
+          class="row h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-12">
+            <div class="title-wraper">iPhone 11</div>
+            <div class="description-wrapper">
+              Just the right amount of everything.
+            </div>
+            <div class="price-wrapper">
+              From $16.62/mo. or $399 with trade‑in.
+            </div>
+            <div class="links-wrapper">
+              <ul>
+                <li><a href="">Learn more</a></li>
+                <li><a href="">Buy</a></li>
+              </ul>
             </div>
           </div>
-          <div class="tvshow-logo-wraper">
-            <img src="images/icons/servant-logo.png" alt="" />
-          </div>
-          <div class="watch-more-wrapper">
-            <a href="#">Watch the trailer</a>
-          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="right-side-wrapper col-12 col-md my-2 mx-md-2">
-          <div class="product-name">AirPods Pro</div>
-          <div class="discription-wrapper">Magic like you’ve never heard.</div>
-          <div class="links-wrapper">
-            <ul>
-              <li><a href="#">Learn more</a></li>
-              <li><a href="#">Buy</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ---------Fifth Section end------------ -->
-
-      <!-- ---------Six Section Start------------ -->
-
-      <section class="sixth-section row mx-0">
-        <div class="left-side-wrapper col-md my-2 mx-md-2 col-12">
-          <div class="model">16-inch model</div>
-          <div class="product-name">MacBook Pro</div>
-          <div class="description-wraper">The best for the brightest.</div>
-          <div class="links-wrapper">
-            <ul>
-              <li><a href="#">Learn more</a></li>
-              <li><a href="#">Buy</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="right-side-wrapper col-md my-2 mx-md-2 col-12">
-          <div class="top-logo-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/icons/new-ipad-logo.png" alt="" />
+    <!-- Fourth highlight section -->
+    <section class="fourth-heghlight-wrapper">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-m-6 col-lg-6 left-side-wrapper">
+          <div class="left-side-inner-wrapper">
+            <div class="top-logo-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/icons/watch-series5-logo.png" />
+              </div>
+            </div>
+            <div class="description-wraper">
+              With the new Always-On Retina display.<br />
+              You’ve never seen a watch like this.
+            </div>
+            <div class="links-wrapper">
+              <ul>
+                <li><a href="">Learn more</a></li>
+                <li><a href="">Buy</a></li>
+              </ul>
             </div>
           </div>
-          <div class="discription-wrapper">
-            Like a computer. Unlike any computer.
-          </div>
-          <div class="links-wrapper">
-            <ul>
-              <li><a href="#">Learn more</a></li>
-              <li><a href="#">Buy</a></li>
-            </ul>
+        </div>
+
+        <div class="col-12 col-sm-12 col-m-6 col-lg-6 right-side-wrapper">
+          <div class="right-side-inner-wrapper">
+            <div class="top-logo-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/icons/apple-card-logo.png" />
+              </div>
+            </div>
+            <div class="description-wraper">
+              Get 3% Daily Cash on purchases from Apple using Apple Card.
+            </div>
+            <div class="links-wrapper">
+              <ul>
+                <li><a href="">Learn more</a></li>
+                <li><a href="">Buy</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- ---------Six Section end------------ -->
-    </main>
-    <!--  -->
+      </div>
+    </section>
 
-    <!-- Footer section stats here -->
+    <!-- Fifth highlight section -->
+    <section class="fifth-heghlight-wrapper">
+      <div class="row">
+        <div class="col-sm-12 col-m-6 col-lg-6 left-side-wrapper">
+          <div class="left-side-inner-wrapper">
+            <div class="top-logo-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/icons/apple-tv-logo.png" />
+              </div>
+            </div>
+
+            <div class="tvshow-logo-wraper">
+              <img src="images/icons/servant-logo.png" />
+            </div>
+
+            <div class="watch-more-wrapper">
+              <a href="#">Watch the trailer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-m-6 col-lg-6 right-side-wrapper">
+          <div class="right-side-inner-wrapper">
+            <div class="top-logo-wrapper">
+              <div class="logo-wrapper">AirPods Pro</div>
+            </div>
+
+            <div class="description-wraper">Magic like you’ve never heard.</div>
+
+            <div class="links-wrapper">
+              <ul>
+                <li><a href="">Learn more</a></li>
+                <li><a href="">Buy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sixth highlight section -->
+    <section class="sixth-heghlight-wrapper">
+      <div class="row">
+        <div class="col-sm-12 col-m-6 col-lg-6 left-side-wrapper">
+          <div class="left-side-inner-wrapper">
+            <div class="model">16-inch model</div>
+
+            <div class="product-title-small">MacBook Pro</div>
+
+            <div class="description-wraper">The best for the brightest.</div>
+
+            <div class="links-wrapper">
+              <ul>
+                <li><a href="">Learn more</a></li>
+                <li><a href="">Buy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-m-6 col-lg-6 right-side-wrapper">
+          <div class="right-side-inner-wrapper">
+            <div class="top-logo-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/icons/new-ipad-logo.png" />
+              </div>
+            </div>
+
+            <div class="description-wraper">
+              Like a computer. Unlike any computer.
+            </div>
+
+            <div class="links-wrapper">
+              <ul>
+                <li><a href="">Learn more</a></li>
+                <li><a href="">Buy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer-wrapper">
       <div class="container">
-        <div class="upper-text-container">
-          <p>
+        <div class="row">
+          <div class="upper-text-container">
             1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro
             promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X
             in good condition. Additional trade‑in values require purchase of a
@@ -277,34 +319,14 @@
             require saving this information). Sales tax may be assessed on full
             value of new iPhone. Additional terms from Apple or Apple’s trade-in
             partners may apply. Monthly pricing: Available to qualified
-            customers and requires 0% APR, 24-month installment loan with
-            Citizens One or Apple Card Monthly Installments and iPhone
-            activation with AT&T, Sprint, T-Mobile, or Verizon. Taxes and
-            shipping not included. Additional Apple Card Monthly Installments
-            terms are in the
-            <a
-              href="https://www.goldmansachs.com/terms-and-conditions/Apple-Card-Customer-Agreement.pdf"
-              target="_blank"
-            >
-              Customer Agreement</a
-            >. Additional iPhone Payments terms are
-            <a
-              href="https://www.apple.com/legal/sales-support/iphoneinstallments_us/"
-            >
-              here</a
-            >.
-          </p>
-          <p>
-            2. Subscription required.<br /><br />
-            Magic Keyboard sold separately.<br /><br />
-            Apple TV+ is $4.99/month after free trial. One subscription per
-            Family Sharing group. Offer good for 3 months after eligible device
-            activation. Plan automatically renews until cancelled. Restrictions
-            and other <a href="https://www.apple.com/promo/">terms </a> apply.
-          </p>
+            customers and requires 0% APR, 24‑month installment loan with
+            Citizens One, and iPhone activation with AT&T, Sprint, T‑Mobile, or
+            Verizon. <a href="#"> Full terms apply</a>.
+          </div>
         </div>
-        <div class="footer-links-wrapper row">
-          <div class="links-wrapper-1 col-sm-12 col-md">
+
+        <div class="row footer-links-wrapper">
+          <div class="col col-12 col-sm-6 col-m-4 col-lg-2 offset1">
             <h3>Shop and Learn</h3>
             <ul>
               <li><a href="#">Mac</a></li>
@@ -320,7 +342,7 @@
               <li><a href="#">Gift Cards</a></li>
             </ul>
           </div>
-          <div class="links-wrapper-2 col-sm-12 col-md">
+          <div class="col col-12 col-sm-6 col-m-4 col-lg-2">
             <h3>Services</h3>
             <ul>
               <li><a href="#">Apple Music</a></li>
@@ -337,7 +359,7 @@
               <li><a href="#">iCloud.com</a></li>
             </ul>
           </div>
-          <div class="links-wrapper-3 col-sm-12 col-md">
+          <div class="col col-12 col-sm-6 col-m-4 col-lg-2">
             <h3>Apple Store</h3>
             <ul>
               <li><a href="#">Find a Store</a></li>
@@ -353,7 +375,7 @@
               <li><a href="#">Shopping Help</a></li>
             </ul>
           </div>
-          <div class="links-wrapper-4 col-sm-12 col-md">
+          <div class="col col-12 col-sm-6 col-m-4 col-lg-2">
             <h3>For Business</h3>
             <ul>
               <li><a href="#">Apple and Business</a></li>
@@ -370,13 +392,9 @@
               <li><a href="#">Apple Store Account</a></li>
               <li><a href="#">iCloud.com</a></li>
             </ul>
-            <h3>For Government</h3>
-            <ul>
-              <li><a href="#">Apple and Education</a></li>
-              <li><a href="#">Shop for College</a></li>
-            </ul>
           </div>
-          <div class="links-wrapper-5 col-sm-12 col-md">
+
+          <div class="col col-12 col-sm-6 col-m-4 col-lg-2">
             <h3>Apple Values</h3>
             <ul>
               <li><a href="#">Find a Store</a></li>
@@ -397,35 +415,8 @@
             </ul>
           </div>
         </div>
-        <div class="my-apple-wrapper">
-          More ways to shop: <a href="#">Find an Apple Store</a> or
-          <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
-        </div>
-        <div class="copyright-wrapper row">
-          <div
-            class="copyright col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1"
-          >
-            Copyright &copy; 2020 Apple Inc. All rights reserved.
-          </div>
-          <div class="footer-links-terms col-sm-12 order-3 col-lg-6 order-lg-2">
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Sales and Refunds</a></li>
-              <li><a href="#">Legal</a></li>
-              <li><a href="#">Site Map</a></li>
-            </ul>
-          </div>
-          <div
-            class="footer-country col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3"
-          >
-            <div class="flag-wrapper"><img src="images/icons/16.png" /></div>
-            <div class="footer-country-name">United States</div>
-          </div>
-        </div>
       </div>
     </footer>
-    <!-- Footer section ends here -->
 
     <!-- Javascript -->
 
@@ -434,5 +425,6 @@
 
     <!-- Bootsrap JS -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
